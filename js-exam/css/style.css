@@ -1,0 +1,166 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    overflow: hidden;
+background-color: black;
+}
+h1,
+h2,
+h3,
+span,
+p{
+    color: white !important;
+}
+/* =======spinner===== */
+#spinner{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    z-index: 22;
+}
+
+.sk-cube-grid {
+    width: 40px;
+    height: 40px;
+    margin: 100px auto;
+  }
+  
+  .sk-cube-grid .sk-cube {
+    width: 33%;
+    height: 33%;
+    background-color: rgba(255, 255, 255, 0.8);
+    float: left;
+    -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+            animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+  }
+  .sk-cube-grid .sk-cube1 {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s; }
+  .sk-cube-grid .sk-cube2 {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s; }
+  .sk-cube-grid .sk-cube3 {
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s; }
+  .sk-cube-grid .sk-cube4 {
+    -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s; }
+  .sk-cube-grid .sk-cube5 {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s; }
+  .sk-cube-grid .sk-cube6 {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s; }
+  .sk-cube-grid .sk-cube7 {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s; }
+  .sk-cube-grid .sk-cube8 {
+    -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s; }
+  .sk-cube-grid .sk-cube9 {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s; }
+  
+  @-webkit-keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+      -webkit-transform: scale3D(1, 1, 1);
+              transform: scale3D(1, 1, 1);
+    } 35% {
+      -webkit-transform: scale3D(0, 0, 1);
+              transform: scale3D(0, 0, 1); 
+    }
+  }
+  
+  @keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+      -webkit-transform: scale3D(1, 1, 1);
+              transform: scale3D(1, 1, 1);
+    } 35% {
+      -webkit-transform: scale3D(0, 0, 1);
+              transform: scale3D(0, 0, 1);
+    } 
+  }
+
+   /*========= siderbar =========*/
+   #sideBar{
+    position:fixed ;
+    top: 0;
+    bottom: 0;
+    z-index: 30;
+    display: flex;
+  }
+
+  .siderBar-inner{
+    background-color:black;
+    padding: 10px;
+    color: white;
+    justify-content: space-between;
+
+  }
+  .list-unstyled li{
+    padding: 15px 20px;
+    transition: all .4s;
+    position: relative;
+    cursor: pointer;
+  }
+ 
+  .nav-side{
+   background-color: white;
+   color: black; 
+   padding: 10px;
+   justify-content: space-between;
+   align-items: center;
+   
+   
+  }
+  .fa-align-justify,
+  .fa-x{
+transform: translateY(50%);
+cursor: pointer;
+  }
+  
+ .logo{
+    width: 50px;
+ }
+ .nav-icons i{
+    cursor: pointer;
+ }
+ 
+
+ /* meals display */
+.meal-layer{
+    width: 100%;
+    height: 100%;
+    background-color: #f9f6f6ca;
+    top: 100%;
+    transition: .5s;
+}
+
+.meal:hover .meal-layer{
+    top: 0;
+}
+.meal-layer h3,
+.meal-layer p
+{
+    color: black !important;
+}
+.displayArea{
+    cursor: pointer;
+    text-align: center;
+border-radius: 3px;
+}
+.displayArea i,
+.displayArea h3
+{
+    color: white;
+}
+.getIngredientsMeals{
+    cursor: pointer;
+    text-align: center;
+border-radius: 3px;
+}
+.getIngredientsMeals i{
+    color: white;
+}

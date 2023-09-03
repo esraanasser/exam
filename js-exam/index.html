@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- spinner -->
+    <div id="spinner">
+        <div class="sk-cube-grid">
+            <div class="sk-cube sk-cube1"></div>
+            <div class="sk-cube sk-cube2"></div>
+            <div class="sk-cube sk-cube3"></div>
+            <div class="sk-cube sk-cube4"></div>
+            <div class="sk-cube sk-cube5"></div>
+            <div class="sk-cube sk-cube6"></div>
+            <div class="sk-cube sk-cube7"></div>
+            <div class="sk-cube sk-cube8"></div>
+            <div class="sk-cube sk-cube9"></div>
+          </div>
+    </div> 
+<!-- spinner -->
+
+  <!-- sideBar -->
+  <section id="sideBar">
+    <div class="siderBar-inner d-flex flex-column">
+        <div class="links">
+    <ul class="list-unstyled overflow-hidden">
+             <li onclick="showSearchInputs(); closeSidebar()" class="position-relative">Search</li>
+            <li onclick=" getCategories(); closeSidebar()" class="position-relative">Categories </li>
+            <li onclick="getArea(); closeSidebar()" class="position-relative">Area</li>
+            <li onclick="getIngredients(); closeSidebar()" class="position-relative">Ingredients</li>
+            <li onclick="showContacts(); closeSidebar()" class="position-relative"class="position-relative">Contact Us</li>
+           </ul>
+        </div>
+     
+      <div class="bar-footer align-self-end">
+         <div class="social-links">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-solid fa-globe py-1"></i>
+      </div>
+    <div class="footer-text">
+        <p>Copyright Â© 2019 All Rights
+            Reserved.</p>
+    </div>
+</div>
+    </div>
+   <div class="nav-side d-flex flex-column ">
+   <img src="images/logo.png" alt="" class="logo">
+    
+    <i class="fa-solid fa-align-justify fa-2x change"></i>
+    <!-- <i class="fa-solid fa-xmark fa-2x change"></i> -->
+    <div class="nav-icons d-flex flex-column">
+        <i class="fa-solid fa-globe py-1"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+    </div>
+</div> 
+   
+</section>
+
+<div class="container w-75" id="searchContainer"></div>
+<section class="data container my-5">
+<div class="row gy-4" id="myData">
+
+</div>
+</section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
